@@ -1,0 +1,79 @@
+
+/* >=568px, .pure-u-sm */
+@media screen and (min-width: 35.5em) {
+    .grid-sizer { width: 50%;}
+    .sm-remove {  display:none!important;}
+    #chm-timeline-footer .chm-bottommenu .bottom-nav { height: 38px; text-align: center; }
+    #chm-timeline-footer .chm-bottommenu .bottom-nav a { text-align: left; margin-top:1em }
+    #chm-timeline-footer .chm-bottommenu .copyright {margin-top:3em; text-align: left;}
+    
+}
+
+
+/* >=768px, .pure-u-md */
+@media screen and (min-width: 48em)	{
+
+    .dotstyle li { margin: 10px 15px; }
+    .grid-sizer { width: 33.3%;}
+    .md-remove {  display:none!important;}
+    .chm-timeline-year-entry .media { margin-right: 60px; }
+    #chm-timeline-footer .chm-bottommenu .bottom-nav a { text-align: center; margin-top:0 }
+    #chm-timeline-footer .chm-bottommenu .copyright {margin-top:1em; text-align: center;}
+
+
+}
+
+
+/* >=1024px, .pure-u-lg */
+@media screen and (min-width: 1025px)	{
+    .chm-category-timeline-section.right .chm-category-timeline-section-year:before { margin-left: 4px;}
+    .chm-category-timeline-section.left .chm-category-timeline-section-year:before { margin-right: 4px;}
+    .chm-category-timeline-section-year:before { width: 12px}
+
+    .lg-remove {  display:none!important;}
+    #chm-timeline-footer .chm-bottommenu .copyright {margin-top:0;}
+}
+
+
+/* >=1280px, .pure-u-xl */
+@media screen and (min-width: 80em)	{
+
+
+
+}
+
+/* irrelevant to pure grid */
+/* <568 */
+@media (min-width: 0em) and (max-width: 35.5em) {
+    .emptyYear {visibility: hidden;}
+    .years {display:inline-block;}
+    .sm-remove { display:none!important;}
+    .grid-sizer { width: 100%;}
+
+    #chm-timeline-footer .chm-bottommenu .bottom-nav { height: 38px; text-align: left; }
+    #chm-timeline-footer .chm-bottommenu .copyright { text-align: left; margin-top:3em;}
+    #chm-timeline-footer .chm-bottommenu .bottom-nav a { text-align: left; margin-top:1em }
+
+
+
+    /* sections on phone */
+    .chm-category-timeline-section { width: 100%; display: block; position:absolute; left:10%;  }
+
+    #chm-timeline-content-category.chm-category-timeline-sections::before { left: 50%; margin-left: -2px; background-color: #dd5555; content: ""; height: 100%; position: absolute; top: 0px; width: 4px; }
+    .chm-category-timeline-section-year { left: calc(50% - (2.5em + .5vw)/2 - 2px)!important; top: -1.4em!important; }
+    .chm-category-timeline-section-year::before {display:none;}
+}
+
+/* <391 only for the 4th year line bar */
+@media screen and (max-width: 390px) {
+    /* .ssm-remove {display:none;} */
+}
+
+/* To cordinate with wrapper, adjust line top for the second bar */
+@media (min-width: 768px) and (max-width: 970px) {
+    .sec-btm-bar {    top: -202px;}
+}
+
+@media screen and (max-width: 991px) {
+    body {padding-top:90px!important}
+}
